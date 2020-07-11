@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "YVD+EqYAf9JH90vR75zDqeOFGz9VHZBALBmn/7IYqTP6e9JkQ2RwiRbaYzoypLceLwwFQn5PQFPC29dQ8r2zOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor\\Desktop\\Portfolio\\Apps\\Xamarin\\StarWarsApp_lab2\\StarWarsApp_lab2\\StarWarsApp_lab2\\StarWarsApp_lab2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Victor\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Victor\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Victor\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512"
+  ],
+  "logs": []
+}

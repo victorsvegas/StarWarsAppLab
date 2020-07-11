@@ -1,0 +1,1 @@
+C:\Users\Victor\Desktop\Xamarin Bajs\StarWarsApp_lab2\StarWarsApp_lab2\StarWarsApp_lab2.UWP\StarWarsApp_lab2.UWP.csproj;x86

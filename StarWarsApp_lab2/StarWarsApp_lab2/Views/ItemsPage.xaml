@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StarWarsApp_lab2.Views.ItemsPage"
+             Title="The people of star wars"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Black" VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Margin="0,40,0,40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                        <Image Source="Images/sw_logo.png" VerticalOptions="Center" HeightRequest="100" Aspect="AspectFit"/>
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+            <Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Margin="10" Text="Random people generator" FontSize="25" />
+                    <ListView x:Name="Person" ItemsSource="{Binding People}" Grid.Row="1" HorizontalOptions="FillAndExpand" HasUnevenRows="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid HorizontalOptions="FillAndExpand" Padding="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Name: " HorizontalOptions="StartAndExpand" Grid.Row="0" TextColor="#000000"  FontAttributes="Bold"/>
+                                        <Label Text="{Binding name}" HorizontalOptions="StartAndExpand" Grid.Row="0" TextColor="#000000"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Height: " HorizontalOptions="StartAndExpand" Grid.Row="1" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding height}" HorizontalOptions="StartAndExpand" Grid.Row="1" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Mass: " HorizontalOptions="StartAndExpand" Grid.Row="2" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding mass}" HorizontalOptions="StartAndExpand" Grid.Row="2" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Gender: " HorizontalOptions="StartAndExpand" Grid.Row="3" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding gender}" HorizontalOptions="StartAndExpand" Grid.Row="3" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Skin color: " HorizontalOptions="StartAndExpand" Grid.Row="4" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding skin_color}" HorizontalOptions="StartAndExpand" Grid.Row="4" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Eye color: " HorizontalOptions="StartAndExpand" Grid.Row="5" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding eye_color}" HorizontalOptions="StartAndExpand" Grid.Row="5" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Hair color: " HorizontalOptions="StartAndExpand" Grid.Row="6" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding hair_color}" HorizontalOptions="StartAndExpand" Grid.Row="6" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                        <Label Text="Birth year: " HorizontalOptions="StartAndExpand" Grid.Row="7" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding birth_year}" HorizontalOptions="StartAndExpand" Grid.Row="7" TextColor="DimGray"  FontAttributes="Bold" Grid.Column="1"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
